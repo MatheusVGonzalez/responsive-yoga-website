@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body{
+background-color: rgba(245, 240, 255, 1);
+}
+section h2{
+  color: rgba(75, 62, 101, 1);
+  font-family: 'Lora', serif;
+  font-size: 64px;
+}
+section p{
+  color: rgba(75, 62, 101, 1);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+/* routine */
+.routine{
+  display: flex;
+  margin: 50px;
+}
+.routine-text{
+  justify-self: baseline;
+  width: 40vw;
+}
+.routine-item-wrapper{
+  display: flex;
+  align-items: center;
+}
+.routine-item-wrapper p{
+  padding-left: 1ch;
+}
