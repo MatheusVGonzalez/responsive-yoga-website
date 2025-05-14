@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main {
+    display: grid;
+    background-color: #f4f0fe;
+    width: 100%;
+    grid-template-areas:
+        "nav nav"
+        "first-part image-fp"
+        "first-part2 image-fp"
+        "image-fp2 second-part"
+        "image-fp3 third-part";
+    justify-content: center;
+    align-content: center;
+}
+
+nav ul, nav h2, nav input {
+    background-color: #f4f0fe;
+    font-family: 'Lora', serif;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.navegation{
+    background-color: #f4f0fe;
+    grid-area: nav;
+    display: flex;
+    content: space-between;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+nav ul a{
+    color: #220953;
+    text-decoration: none;
+    background-color: #f4f0fe;
+    font-family: 'Lora', serif;
+}
+
+.first-part{
+    background-color: #f4f0fe;
+    grid-area: first-part;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+}
+
+.first-part h1{
+    background-color: #f4f0fe;
+    font-family: 'Lora', serif;
+    color: #220953;
+    font-size: 5vw;
+    margin-bottom: 6%;
+}
+
+.first-part p{
+    font-family: 'Lora', serif;
+    color: #220953;
+    font-size: 1vw;
+}
+
+#yoga-text{
+    background-image: linear-gradient(to bottom right, #FF52AF, #9F53FF);
+    color: white;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+    transform: rotate(10deg);
+    display: inline-block;
+
+}
+
+.first-part button {
+    font-family: 'Lora', serif;
+    color: #f4f0fe;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 0.8vw 1vw 0.8vw 1vw;
+    border-radius: 50px;
+    border: none;
+    margin-top: 6%; 
+    background-image: linear-gradient(to bottom right, #FF52AF, #9F53FF);
+}
+
+.first-part2 {
+    background-color: #f4f0fe;
+    display: flex;
+    grid-area: first-part2;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+}
+
+.first-part2 p{
+    font-family: 'Lora', serif;
+    color: #220953;
+    font-size: 1vw;
+    display: block;
+}   
+
+#numberh4{
+    font-family: 'Lora', serif;
+    color: #220953;
+    font-size: 3vw;
+    margin-bottom: 6%;
+    font-weight: 400;
+    display: flex;
+    
+}
+
+.image-fp{
+    background-color: #f4f0fe;
+    grid-area: image-fp;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.second-part{
+    background-color: #f4f0fe;
+    grid-area: second-part;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.image-fp2{
+    background-color: #f4f0fe;
+    grid-area: image-fp2;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.third-part{
+    background-color: #f4f0fe;
+    grid-area: third-part;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.image-fp3{
+    background-color: #f4f0fe;
+    grid-area: image-fp3;
+    padding: 10px;
+    min-height: 50px;
+    color: black;
+    font-family: 'Poppins', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
