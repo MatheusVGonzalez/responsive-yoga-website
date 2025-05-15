@@ -180,8 +180,24 @@ footer{
   color:rgba(161, 151, 180, 1);
   padding: 50px 150px;
 }
-footer table{
+.footer-container{
   width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "footerlogo footerlogo address contact office";
+}
+.footer-logo{
+  grid-area: footerlogo;
+}
+.address{
+  grid-area: address;
+}
+.contact{
+  grid-area: contact;
+}
+.office{
+  grid-area: office;
 }
 #footer-logo{
   background: linear-gradient(to right, #FF52AF, #9F53FF);
@@ -189,7 +205,7 @@ footer table{
   -webkit-text-fill-color: transparent;
   padding-bottom: 20px;
 }
-footer th{
+footer h3{
   color: white;
   font-size: 1.3em;
   text-align: left;
@@ -207,4 +223,132 @@ footer hr{
 }
 .footer-icons img{
   padding-right: 30px;
+}
+
+@media (max-width: 768px) {
+
+  /* routine */
+  .routine {
+    flex-direction: column;
+    height: auto;
+    margin: 50px;
+  }
+  .routine-text, .routine-imgs {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .routine-text p{
+    font-size: 30px;
+  }
+  .routine-text button{
+    font-size: 30px;
+    padding: 5% 20%;
+    margin: 40px;
+  }
+  .routine-imgs{
+    position:relative;
+    height: 620px;
+  }
+  #routine-yoga-1{
+    position: absolute;
+    left:0px;
+  }
+  #routine-yoga-2{
+    position: absolute;
+    left: 100px;
+  }
+  .routine-item-wrapper a{
+    font-size: 23px;
+  }
+
+  /* follow-yoga */
+  .follow-yoga{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    height: 1550px;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  #follow-yoga-1{
+    position:absolute;
+    left:30px;
+    top: 400px;
+  }
+  #follow-yoga-2{
+    position:absolute;
+    top: 450px;
+    right: 30px;
+  }
+  #follow-yoga-3{
+    position:absolute;
+    left:30px;
+    top: 850px;
+  }
+  #follow-yoga-4{
+    position:absolute;
+    top: 1200px;
+    right: 30px;
+  }
+  .follow-yoga button{
+    font-size: 30px;
+  }
+
+  /* join */
+  .join{
+    margin: 20px 30px;
+    background: linear-gradient(to right, rgba(255, 82, 175, 1), rgba(159, 83, 255, 1));
+    padding: 7% 8%;
+    border-radius: 30px;
+  }
+  .join h2{
+    font-size: 60px;
+  }
+  .join p{
+    font-size: 30px;
+  }
+  .join-input{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .join input{
+    padding: 30px;
+    font-size: 15px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin: auto;
+    width: 70ch;
+  }
+  .join button{
+    padding: 20px 30px;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  /* footer */
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .footer-container div{
+    margin-bottom: 40px;
+  }
+  .footer-icons{
+    flex-direction: column;
+    justify-items: center;
+  }
+  #iconwrapper{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .footer-icons p{
+    text-align: center;
+    font-size: 20px;
+  }
 }
