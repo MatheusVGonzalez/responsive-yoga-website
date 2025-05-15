@@ -19,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 1rem 5rem;
 }
 
 .logo h1 {
@@ -86,17 +86,18 @@ main {
 }
 
 .hero-text h1 {
-  font-size: 4rem;
+  font-size: 600%;
   line-height: 1.2;
   margin-left: 5%;
   margin-bottom: 1%;
+  font-weight: 500;
 }
 
 .yoga-highlight {
   display: inline-block;
   background: linear-gradient(to bottom right, #FF52AF, #9F53FF);
   color: #fff;
-  padding: 0.2em 0.6em;
+  padding: 0.1em 0.2em;
   border-radius: 10px;
   transform: rotate(8deg);
 }
@@ -132,7 +133,7 @@ main {
 }
 
 .stats h4 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   margin-bottom: 0.1rem;
   margin-left: 5rem;
   font-weight: 500;
@@ -141,7 +142,8 @@ main {
 
 .hero-image img {
   width: 100%;
-  max-width: 400px;
+  max-width: 90%;
+  margin-right: 3rem;
 }
 
 .pose-section {
@@ -171,8 +173,6 @@ main {
 
 .pose-text p {
   display: flex;
-  margin-left: 3%;
-  margin-bottom: 1rem;
   align-items: left;
   text-align: flex-start;
 
@@ -188,6 +188,39 @@ main {
   background: transparent;
   cursor: pointer;
 }
+
+.pose-button {
+  margin-left: 30%;
+  position: relative;
+}
+
+.svg-button-wrapper {
+  position: relative;
+  width: 200px;
+  height: 140px;
+}
+
+.svg-button-wrapper svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-button-content {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+  color: #9F53FF;
+  font-size: 1.2rem;
+  font-family: 'Lora', serif;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 .health-section {
   display: flex;
@@ -225,7 +258,6 @@ main {
   margin-top: 5%;
 }
 
-/* Dark Mode */
 body.dark-mode {
   background-color: #220953;
   color: #f4f0fe;
@@ -239,6 +271,11 @@ body.dark-mode .navigation{
 body.dark-mode button {
   color: #220953;
   background: linear-gradient(to bottom right, #f4f0fe, #ccc);
+}
+
+.dark-mode .nav-links li a {
+    color: white;
+
 }
 
 @media (max-width: 768px) {
@@ -268,10 +305,6 @@ body.dark-mode button {
     text-align: center;
   }
 
-  .hero-text h1 {
-    font-size: 2.2rem;
-  }
-
   .stats {
     justify-content: center;
   }
@@ -284,4 +317,19 @@ body.dark-mode button {
         background-color: #a8a9a8;
         opacity: 0.7;
     }
+
+    .pose-button {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .svg-button-wrapper {
+    width: 140px;
+    height: 90px;
+  }
+
+  .svg-button-content {
+    font-size: 0.9rem;
+  }
+
 }
