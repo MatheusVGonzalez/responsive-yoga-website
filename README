@@ -1,0 +1,22 @@
+# Yoga Landing Page
+This is a simple and responsive Yoga landing page created with HTML and CSS. The design includes smooth transitions and animations to enhance the user experience. It is a redesigned design to enhance the skills of just looking at the design and recreating.
+
+## Design Credit
+The original UI design was created by **Young Kim**. Figma Profile: [https://www.figma.com/@youngkim5](https://www.figma.com/community/file/1229610063156797225/figma-design-responsive-yoga-website)
+
+## Development Team
+- **[Matheus Gonzalez]** - Me (https://github.com/MatheusVGonzalez)
+- **Rinko** (GitHub: [@matsu129](https://github.com/matsu129))
+
+## Features
+- CSS transitions on buttons and images
+- Animations on text and elements
+- Responsive layout
+- Toggle dark mode
+
+## How to Use
+Just open `index.html` in your browser. No installation required.
+
+---
+
+This project was created for educational purposes.
