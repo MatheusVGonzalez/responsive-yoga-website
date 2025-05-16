@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: 'Lora', serif;
+  font-family: "Lora", serif;
   background-color: #f4f0fe;
   color: #220953;
 }
@@ -24,7 +24,7 @@ header {
 
 .logo h1 {
   font-size: 1.8rem;
-  background: linear-gradient(to bottom right, #FF52AF, #9F53FF);
+  background: linear-gradient(to bottom right, #ff52af, #9f53ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -35,8 +35,6 @@ header {
   gap: 20px;
 }
 
-
-
 .nav-links li a {
   text-decoration: none;
   color: #220953;
@@ -45,7 +43,7 @@ header {
 
 .nav-links li a:hover,
 .nav-links li a.active {
-  color: #9F53FF;
+  color: #9f53ff;
 }
 
 .menu-icon {
@@ -64,7 +62,6 @@ header {
 #dark-toggle {
   display: none;
 }
-
 
 main {
   display: flex;
@@ -95,7 +92,7 @@ main {
 
 .yoga-highlight {
   display: inline-block;
-  background: linear-gradient(to bottom right, #FF52AF, #9F53FF);
+  background: linear-gradient(to bottom right, #ff52af, #9f53ff);
   color: #fff;
   padding: 0.1em 0.2em;
   border-radius: 10px;
@@ -118,7 +115,7 @@ main {
   padding: 0.8rem 1.2rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(to bottom right, #FF52AF, #9F53FF);
+  background: linear-gradient(to bottom right, #ff52af, #9f53ff);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -153,9 +150,9 @@ main {
 }
 
 .pose-image img {
-    width: 100%;
-    align-items: left;
-    text-align: left;
+  width: 100%;
+  align-items: left;
+  text-align: left;
 }
 
 .pose-text {
@@ -176,29 +173,27 @@ main {
   display: flex;
   align-items: left;
   text-align: flex-start;
-  margin-left: 3rem
-
+  margin-left: 3rem;
 }
 
 .pose-button button {
-    width: 9rem;
-    height: 9rem;
-    background-color: transparent;
-    border-color: transparent;
-    background-image:url('images/button.png');
-    margin-left: 2rem;
+  width: 9rem;
+  height: 9rem;
+  background-color: transparent;
+  border-color: transparent;
+  background-image: url("images/button.png");
+  margin-left: 2rem;
 }
 
-#heart{
+#heart {
   max-width: 25%;
   top: 4rem;
   position: absolute;
   left: 3rem;
   z-index: 4;
-  
 }
 
-#description{
+#description {
   max-width: 20%;
   position: absolute;
   left: 19rem;
@@ -233,14 +228,13 @@ main {
   font-size: 4rem;
   margin-bottom: 1rem;
   font-weight: 500;
-
 }
 
 .health-text button {
   padding: 0.8rem 1.2rem;
   font-weight: bold;
   color: white;
-  background: linear-gradient(to bottom right, #FF52AF, #9F53FF);
+  background: linear-gradient(to bottom right, #ff52af, #9f53ff);
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -252,7 +246,7 @@ body.dark-mode {
   color: #f4f0fe;
 }
 
-body.dark-mode .navigation{
+body.dark-mode .navigation {
   background-color: #220953;
   color: #f4f0fe;
 }
@@ -263,58 +257,83 @@ body.dark-mode button {
 }
 
 .dark-mode .nav-links li a {
-    color: white;
-
+  color: white;
 }
 
 @media (max-width: 768px) {
-    
-    main{
-        margin: 0;
-        padding: 0;
-    }
+  main {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
   .hero-text h1 {
     font-size: 2.5rem;
     margin: 0 auto;
     text-align: center;
   }
-    .hero-text p {
+  .hero-text p {
     margin-top: 4%;
     margin-bottom: 0%;
     margin-left: 6%;
     margin-right: 6%;
-    }
+  }
   .hero-text button {
     margin: 1rem auto;
     display: block;
   }
-.stats {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 0;
-}
+  .stats {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
 
-.stat-block {
-  display: flex;
+  .stat-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats h4 {
+    font-size: 1.8rem;
+    margin: 0;
+    text-align: center;
+  }
+
+  .stats p.minimum,
+  .stats p.minimum2 {
+    font-size: 0.9rem;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+  .stats p.minimum2 {
+    margin-left: 2rem;
+  }
+
+.pose-section {
   flex-direction: column;
   align-items: center;
+  margin-left: 0;
 }
 
-.stats h4 {
-  font-size: 1.8rem;
-  margin: 0;
+.pose-section h4 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+.pose-text p,
+.pose-button {
+  margin-left: 0;
   text-align: center;
 }
 
-.stats p.minimum, .stats p.minimum2 {
-  font-size: 0.9rem;
-  margin: 0;
-  margin-bottom: 2rem;
-}
-.stats p.minimum2 {
-  margin-left: 2rem;
-}
+.pose-button button {
+    width: 9rem;
+    height: 9rem;
+    background-color: transparent;
+    border-color: transparent;
+    background-image: url(images/button.png);
+    margin: 0;
 }
 
 .hero-image img {
@@ -323,50 +342,49 @@ body.dark-mode button {
   margin-left: 1rem;
 }
 
-    .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 70px;
-    right: 2rem;
-    background-color: #f4f0fe;
-    padding: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
+.nav-links {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 70px;
+  right: 2rem;
+  background-color: #f4f0fe;
+  padding: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-  #hamburguer:checked + .menu-icon + .nav-links {
-    display: flex;
-    z-index: 5;
-  }
+#hamburguer:checked + .menu-icon + .nav-links {
+  display: flex;
+  z-index: 5;
+}
 
-  .menu-icon {
-    display: block;
-    z-index: 5;
-  }
+.menu-icon {
+  display: block;
+  z-index: 5;
+}
 
-  .hero,
-  .pose-section,
-  .health-section {
-    flex-direction: column;
-    text-align: center;
-  }
+.hero,
+.pose-section,
+.health-section {
+  flex-direction: column;
+  text-align: center;
+}
 
-  .stats {
-    justify-content: center;
-  }
+.stats {
+  justify-content: center;
+}
 
-  .health-text h2 {
-    font-size: 1.8rem;
-  }
+.health-text h2 {
+  font-size: 1.8rem;
+}
 
-    ul.nav-links {
-        background-color: #a8a9a8;
-        opacity: 0.7;
-    }
+ul.nav-links {
+  background-color: #a8a9a8;
+  opacity: 0.7;
+}
 
-    .pose-button {
-    margin-left: 0;
-    margin-top: 1rem;
-  }
-
+.pose-button {
+  margin-left: 0;
+  margin-top: 1rem;
+}
 }
