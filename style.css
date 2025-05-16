@@ -82,6 +82,38 @@ main {
   min-width: 300px;
 }
 
+.hero-text {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dark-mode .hero-text {
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
 .hero-text h1 {
   font-size: 600%;
   line-height: 1.2;
@@ -121,7 +153,14 @@ main {
   cursor: pointer;
   margin-top: 2%;
   margin-left: 7%;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+.hero-text button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 .stats {
   display: flex;
@@ -142,6 +181,62 @@ main {
   max-width: 90%;
   margin-right: 3rem;
 }
+
+.hero-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.hero-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.pose-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.pose-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.health-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.health-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+
+.dark-mode .hero-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dark-mode .hero-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.dark-mode .pose-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dark-mode .pose-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.dark-mode .health-image img {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.dark-mode .health-image img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
 
 .pose-section {
   display: flex;
@@ -193,6 +288,27 @@ main {
   z-index: 4;
 }
 
+#heart {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.dark-mode #heart {
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+
 #description {
   max-width: 20%;
   position: absolute;
@@ -231,12 +347,12 @@ main {
 }
 
 .health-text button {
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.8rem;
   font-weight: bold;
   color: white;
   background: linear-gradient(to bottom right, #ff52af, #9f53ff);
   border: none;
-  border-radius: 50px;
+  border-radius: 30px;
   cursor: pointer;
   margin-top: 5%;
 }
@@ -251,14 +367,49 @@ body.dark-mode .navigation {
   color: #f4f0fe;
 }
 
-body.dark-mode button {
-  color: #220953;
-  background: linear-gradient(to bottom right, #f4f0fe, #ccc);
+.dark-mode .nav-links li a, .dark-mode .hero-text p, .dark-mode .pose-text p {
+  color: #A094B8;
 }
 
-.dark-mode .nav-links li a {
-  color: white;
+.dark-mode .hero-text button {
+    background: linear-gradient(to bottom right, #ff52af, #9f53ff);
+    color: white;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
 }
+
+.dark-mode .hero-text button:hover {
+  background-color: blue;
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.dark-mode .pose-image img {
+    background-image: url("images/yoga2dark.png");
+    z-index: 4;
+}
+
+.dark-mode .pose-text h4{
+    color: #D1C0F1;
+}
+
+.dark-mode .health-text h2 {
+    color: #D1C0F1;
+}
+
+.dark-mode section p{
+    color: #A094B8
+}
+
+.dark-mode .routine-text h2{
+    color: #D1C0F1;
+}
+
+.dark-mode .follow-yoga-text h2{
+    color: #D1C0F1;
+}
+
 
 @media (max-width: 768px) {
   main {
@@ -281,6 +432,7 @@ body.dark-mode button {
     margin: 1rem auto;
     display: block;
   }
+  
   .stats {
     flex-direction: row;
     justify-content: center;
@@ -353,7 +505,7 @@ body.dark-mode button {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#hamburguer:checked + .menu-icon + .nav-links {
+#hamburguer:checked + .nav-links + .menu-icon {
   display: flex;
   z-index: 5;
 }
